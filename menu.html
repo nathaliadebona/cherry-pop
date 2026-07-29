@@ -32,40 +32,62 @@
     </header>
 
     <main>
-        <section class="hero">
-            <h1>Scoops of happiness since forever</h1>
+        <section class="menu">      
+            <h1>Our Menu</h1>
 
-            <p>Handcrafted sundaes, milkshakes and treats — made to bring back that retro sweet shop feeling.</p>
-
-            <a href="menu.html" class="cta-button">See the menu</a>
-        </section>
-
-        <section class="featured-products">
-            <h2>Fan Favorites</h2>
+            <div class="filter-buttons">
+                <button type="button">All</button>
+                <button type="button">Cones</button>
+                <button type="button">Cups</button>
+                <button type="button">Shakes</button>
+            </div>
 
             <div class="product-grid">
-                <article class="product-card">
+                <article class="product-card" data-category="cones">
                     <h3>Waffle Cone Classic</h3>
                     <p>Vanilla base, rainbow sprinkles, whipped cream</p>
                 </article>
 
-                <article class="product-card">
+                <article class="product-card" data-category="cones">
+                    <h3>Choco Dip Cone</h3>
+                    <p>Chocolate-dipped cone, crushed peanuts, drizzle on top</p>
+                </article>
+
+                <article class="product-card" data-category="cones">
+                    <h3>Nutty Caramel Cone</h3>
+                    <p>Caramel drizzle, roasted almonds, vanilla base</p>
+                </article>
+
+                <article class="product-card" data-category="cups">
                     <h3>Double Scoop Cup</h3>
                     <p>Strawberry & chocolate, cherry on top</p>
                 </article>
 
-                <article class="product-card">
+                <article class="product-card" data-category="cups">
+                    <h3>Banana Split Cup</h3>
+                    <p>Banana, three scoops, chocolate syrup, whipped cream</p>
+                </article>
+
+                <article class="product-card" data-category="cups">
+                    <h3>Cookie Crumble Cup</h3>
+                    <p>Cookies & cream, chocolate chunks, fudge swirl</p>
+                </article>
+
+                <article class="product-card" data-category="shakes">
                     <h3>Cherry Pop Shake</h3>
                     <p>Our signature milkshake, chocolate + cherry syrup</p>
                 </article>
+
+                <article class="product-card" data-category="shakes">
+                    <h3>Mint Malt Shake</h3>
+                    <p>Mint ice cream, malted milk, chocolate chips</p>
+                </article>
+
+                <article class="product-card" data-category="shakes">
+                    <h3>Peanut Butter Blast</h3>
+                    <p>Peanut butter, chocolate, banana, whipped cream</p>
+                </article>
             </div>
-        </section>
-
-        <section class="sundae-builder">
-            <h2>Build Your Own Sundae</h2>
-            <p>Pick your cone, your flavor, and your topping — watch it come together.</p>
-
-            <div id="sundae-builder-area"></div>
         </section>
     </main>
 
