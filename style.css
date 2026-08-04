@@ -16,6 +16,11 @@
     --space-xl: 4rem;
 }
 
+.text-pink { color: var(--color-pink); }
+.text-mint { color: var(--color-mint); }
+.text-yellow { color: var(--color-yellow); }
+.text-cherry { color: var(--color-cherry); }
+
 * {
     margin: 0;
     padding: 0;
@@ -78,5 +83,18 @@ nav ul li a.active {
 }
 
 .hero {
-    padding: var(--space-xl);
+    padding: var(--space-xl) var(--space-sm);
+    min-height: 60vh;
+    text-align: center;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: var(--space-xs) var(--space-md);
+    margin-top: var(--space-sm);
+    border-radius: 999px;
+    color: var(--color-cream);
+    font-weight: bold;
+    text-decoration: none;
+    background-color: var(--color-yellow);
 }
