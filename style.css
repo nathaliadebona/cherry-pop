@@ -31,13 +31,21 @@ body {
 
 header {
     background-color: var(--color-pink);
-    padding: var(--space-sm);
+    padding: var(--space-xs);
     text-align: center;
 }
 
 #logo {
-    width: 12.5rem;
+    width: 8rem;
     height: auto;
+}
+
+.header-wave {
+    width: 100%;
+    display: block;
+    height: 40px;
+    color: var(--color-pink);
+    margin-top: -1px;
 }
 
 nav {
@@ -67,4 +75,8 @@ nav ul li a {
 
 nav ul li a.active {
     color: var(--color-yellow);
+}
+
+.hero {
+    padding: var(--space-xl);
 }
