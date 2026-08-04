@@ -98,3 +98,43 @@ nav ul li a.active {
     text-decoration: none;
     background-color: var(--color-yellow);
 }
+
+.featured-products {
+    padding: var(--space-xl) var(--space-sm);
+    text-align: center;
+}
+
+.featured-products h2 {
+    margin-bottom: var(--space-lg);
+}
+
+.product-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-lg);
+}
+
+.product-card {
+    max-width: 75%;
+    padding: var(--space-lg) var(--space-md);
+    text-align: center;
+}
+
+.product-card:nth-child(1) {
+    background-color: var(--color-pink);
+    border-radius: 60% 40% 60% 45% / 45% 55% 45% 55%;
+    transform: rotate(-3deg);
+}
+
+.product-card:nth-child(2) {
+    background-color: var(--color-yellow);
+    border-radius: 60% 40% 60% 45% / 45% 55% 45% 55%;
+    transform: rotate(2deg);
+}
+
+.product-card:nth-child(3) {
+    background-color: var(--color-mint);
+    border-radius: 55% 45% 60% 40% / 40% 60% 40% 60%;
+    transform: rotate(-2deg);
+}
