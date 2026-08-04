@@ -34,6 +34,8 @@ body {
     background-color: var(--color-cream);
 }
 
+/* ===== HEADER & NAV ===== */
+
 header {
     background-color: var(--color-pink);
     padding: var(--space-xs);
@@ -81,6 +83,8 @@ nav ul li a {
 nav ul li a.active {
     color: var(--color-yellow);
 }
+
+/* ===== HOME - HERO ===== */
 
 .hero {
     padding: var(--space-xl) var(--space-sm);
@@ -150,6 +154,79 @@ nav ul li a.active {
 
 .sundae-builder p {
     margin-bottom: var(--space-lg);
+}
+
+/* ===== MENU PAGE ===== */
+
+.menu {
+    padding: var(--space-xl) var(--space-sm);
+    text-align: center;
+}
+
+.menu h1 {
+    margin-bottom: var(--space-lg);
+}
+
+.filter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-xs);
+    margin-bottom: var(--space-lg);
+}
+
+.filter-buttons button {
+    padding: var(--space-xs) var(--space-sm);
+    border: none;
+    border-radius: 999px;
+    background-color: var(--color-mint);
+    color: var(--color-cream);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.menu .product-grid {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.menu .product-card {
+    border-radius: 1rem;
+    padding: var(--space-md);
+    text-align: left;
+    transform: none;
+}
+
+.menu .product-card[data-category="cones"] {
+    background-color: color-mix(in srgb, var(--color-pink) 20%, white);
+}
+
+.menu .product-card[data-category="cups"] {
+    background-color: color-mix(in srgb, var(--color-yellow) 20%, white);
+}
+
+.menu .product-card[data-category="shakes"] {
+    background-color: color-mix(in srgb, var(--color-mint) 20%, white);
+}
+
+.price {
+    font-weight: bold;
+    margin-top: var(--space-xs);
+    color: var(--color-cherry);
+}
+
+.add-to-cart {
+    display: inline-block;
+    width: 100%;
+    margin-top: var(--space-sm);
+    padding: var(--space-xs);
+    border: none;
+    border-radius: 999px;
+    background-color: var(--color-pink);
+    color: var(--color-cream);
+    font-weight: bold;
+    cursor: pointer;
 }
 
 footer {
