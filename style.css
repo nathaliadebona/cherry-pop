@@ -1,0 +1,70 @@
+:root {
+    --color-pink: #FF6FA0;
+    --color-yellow: #FFD34E;
+    --color-mint: #4ECDC4;
+    --color-cherry: #E8432F;
+    --color-cream: #FFF8EF;
+    --color-brown: #4A2E2A;
+
+    --font-heading: 'Pacifico', cursive;
+    --font-body: 'Poppins', sans-serif;
+
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 1.5rem;
+    --space-lg: 2.5rem;
+    --space-xl: 4rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-bottom: 4.5rem;
+    font-family: var(--font-body);
+    color: var(--color-brown);
+    background-color: var(--color-cream);
+}
+
+header {
+    background-color: var(--color-pink);
+    padding: var(--space-sm);
+    text-align: center;
+}
+
+#logo {
+    width: 12.5rem;
+    height: auto;
+}
+
+nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    padding: var(--space-sm) 0;
+    background-color: var(--color-pink);
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+nav ul li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--color-cream);
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+nav ul li a.active {
+    color: var(--color-yellow);
+}
