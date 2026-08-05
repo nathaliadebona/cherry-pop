@@ -318,6 +318,65 @@ nav ul li a.active {
     margin-bottom: var(--space-sm);
 }
 
+/* ===== QUIZ PAGE ===== */
+
+.quiz {
+    padding: var(--space-xl) var(--space-sm);
+    text-align: center;
+}
+
+.quiz h1,
+.quiz-question,
+.quiz-question h2 {
+    margin-bottom: var(--space-lg);
+}
+
+.quiz-options {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+}
+
+.quiz-options input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+}
+
+.quiz-options label {
+    display: block;
+    padding: var(--space-sm);
+    border-radius: 1rem;
+    background-color: var(--color-cream);
+    border: 2px solid var(--color-mint);
+    cursor: pointer;
+}
+
+.quiz-options label:has(input:checked) {
+    background-color: var(--color-mint);
+    color: var(--color-cream);
+}
+
+.quiz-form button[type="submit"] {
+    display: block;
+    max-width: 80%;
+    margin: var(--space-lg) auto 0;
+    padding: var(--space-xs) var(--space-sm);
+    border: none;
+    border-radius: 999px;
+    background-color: var(--color-cherry);
+    color: var(--color-cream);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#quiz-result {
+    margin-top: var(--space-xl);
+    padding: var(--space-lg);
+    border-radius: 1rem;
+    background-color: var(--color-yellow);
+    text-align: center;
+}
+
 footer {
     display: flex;
     flex-direction: column;
