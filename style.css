@@ -377,6 +377,47 @@ nav ul li a.active {
     text-align: center;
 }
 
+/* ===== CART PAGE ===== */
+
+.cart {
+    padding: var(--space-xl) var(--space-sm);
+    text-align: center;
+}
+
+.cart h1 {
+    margin-bottom: var(--space-lg);
+}
+
+#empty-cart-message {
+    padding: var(--space-lg) 0;
+    color: var(--color-brown);
+}
+
+.cart-summary {
+    margin-top: var(--space-lg);
+    padding: var(--space-lg);
+    border-radius: 1rem;
+    background-color: color-mix(in srgb, var(--color-pink) 15%, white);
+}
+
+.cart-summary p {
+    margin-bottom: var(--space-md);
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.cart-summary button {
+    display: block;
+    width: 100%;
+    padding: var(--space-sm);
+    border: none;
+    border-radius: 999px;
+    background-color: var(--color-pink);
+    color: var(--color-cream);
+    font-weight: bold;
+    cursor: pointer;
+}
+
 footer {
     display: flex;
     flex-direction: column;
