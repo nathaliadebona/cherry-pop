@@ -458,3 +458,42 @@ footer {
     font-size: 1.5rem;
 }
 
+@media (min-width: 1024px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: var(--space-xs) var(--space-lg);
+    }
+
+    #logo {
+        width: 10rem;
+    }
+
+    nav {
+        position: static;
+        width: auto;
+        background-color: transparent;
+    }
+
+    nav ul {
+        display: flex;
+        gap: var(--space-md);
+        list-style: none;
+    }
+
+    nav ul li a {
+        flex-direction: row;
+        font-size: 1.1rem;
+    }
+
+    nav ul li a:not(.cart-link) i {
+        display: none !important;
+    }
+
+    .cart-link {
+        flex-direction: row;
+        gap: var(--space-xs);
+    }
+}
+
