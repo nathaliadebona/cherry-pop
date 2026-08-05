@@ -229,6 +229,95 @@ nav ul li a.active {
     cursor: pointer;
 }
 
+/* ===== ABOUT PAGE ===== */
+
+.about {
+    padding: var(--space-xl) var(--space-sm);
+    text-align: center;
+}
+
+.about h1 {
+    margin-bottom: var(--space-lg);
+}
+
+.about-story {
+    text-align: left;
+    margin-bottom: var(--space-lg);
+}
+
+.about-story p {
+    margin-bottom: var(--space-md);
+    line-height: 1.8;
+}
+
+.timeline {
+    margin-bottom: var(--space-xl);
+}
+
+.timeline h2 {
+    text-align: center;
+    margin-bottom: var(--space-lg);
+}
+
+.timeline-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+    padding-left: var(--space-md);
+    list-style: none;
+    border-left: 3px solid var(--color-mint);
+}
+
+.timeline-list li {
+    position: relative;
+}
+
+.timeline-list li::before {
+    content: "";
+    position: absolute;
+    left: -2.075rem;
+    top: 0.10rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: var(--color-mint);
+}
+
+.team {
+    text-align: center;
+}
+
+.team h2 {
+    margin-bottom: var(--space-lg);
+}
+
+.team-grid {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+}
+
+.team-member {
+    padding: var(--space-lg) var(--space-md);
+    border-radius: 1rem;
+}
+
+.team-member:nth-child(1) {
+    background-color: color-mix(in srgb, var(--color-pink) 15%, white);
+}
+
+.team-member:nth-child(2) {
+    background-color: color-mix(in srgb, var(--color-mint) 15%, white);
+}
+
+.team-member img {
+    background-color: var(--color-cream);
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    margin-bottom: var(--space-sm);
+}
+
 footer {
     display: flex;
     flex-direction: column;
