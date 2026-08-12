@@ -517,24 +517,21 @@ footer {
         align-items: center;
     }
 
-    .product-card {
+    .featured-products .product-card {
         max-width: 280px;
+        transition: transform 0.3s ease;
     }
 
-    .product-card:nth-child(1):hover {
+    .featured-products .product-card:nth-child(1):hover {
     transform: rotate(3deg);
     }
 
-    .product-card:nth-child(2):hover {
+    .featured-products .product-card:nth-child(2):hover {
         transform: rotate(-2deg);
     }
 
-    .product-card:nth-child(3):hover {
+    .featured-products .product-card:nth-child(3):hover {
         transform: rotate(2deg);
-    }
-
-    .product-card {
-        transition: transform 0.3s ease;
     }
 
     .sundae-builder p {
@@ -561,6 +558,35 @@ footer {
 
     .menu .product-card .add-to-cart {
         margin-top: auto;
+    }
+
+    .about-story {
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .timeline {
+        background-color: var(--color-cream-alt);
+        padding: var(--space-xl) var(--space-sm);
+    }
+
+    .timeline-list {
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .team-grid {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        justify-content: center;
+    }
+
+    .team-member {
+        flex: 1;
+        max-width: 420px;
     }
 }
 
