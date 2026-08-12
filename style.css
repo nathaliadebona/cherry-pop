@@ -446,6 +446,11 @@ footer {
     color: var(--color-yellow);
 }
 
+.footer-logo {
+    width: 8rem;
+    height: auto;
+}
+
 .social-media {
     display: flex;
     justify-content: center;
@@ -454,7 +459,7 @@ footer {
 }
 
 .social-media li a i {
-    color: var(--color-cream);
+    color: var(--color-yellow);
     font-size: 1.5rem;
 }
 
@@ -587,6 +592,36 @@ footer {
     .team-member {
         flex: 1;
         max-width: 420px;
+    }
+
+    .quiz-form {
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #quiz-result {
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: var(--space-xl);
+        text-align: left;
+    }
+
+    .footer-info {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-sm);
+    }
+
+    .social-media {
+        justify-content: flex-start;
     }
 }
 
