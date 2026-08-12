@@ -466,6 +466,15 @@ footer {
         padding: var(--space-xs) var(--space-lg);
     }
 
+    .hero {
+        min-height: auto;
+        padding: 6rem var(--space-lg);
+        background-image: url("../assets/hero-banner.webp");
+        background-size: cover;
+        background-position: center;
+        mask-image: linear-gradient(to bottom, transparent, black 15%, black 85%, transparent);
+    }
+
     #logo {
         width: 10rem;
     }
