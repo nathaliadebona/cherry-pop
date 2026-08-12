@@ -542,5 +542,25 @@ footer {
         margin-left: auto;
         margin-right: auto;
     }
+
+    .menu .product-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        max-width: 1100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .menu .product-card {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        max-width: none;
+    }
+
+    .menu .product-card .add-to-cart {
+        margin-top: auto;
+    }
 }
 
