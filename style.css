@@ -466,15 +466,6 @@ footer {
         padding: var(--space-xs) var(--space-lg);
     }
 
-    .hero {
-        min-height: auto;
-        padding: 6rem var(--space-lg);
-        background-image: url("../assets/hero-banner.webp");
-        background-size: cover;
-        background-position: center;
-        mask-image: linear-gradient(to bottom, transparent, black 15%, black 85%, transparent);
-    }
-
     #logo {
         width: 10rem;
     }
@@ -503,6 +494,43 @@ footer {
     .cart-link {
         flex-direction: row;
         gap: var(--space-xs);
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 6rem var(--space-lg);
+        background-image: url("../assets/hero-banner.webp");
+        background-size: cover;
+        background-position: center;
+        mask-image: linear-gradient(to bottom, transparent, black 15%, black 85%, transparent);
+    }
+
+    .featured-products .product-grid {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .product-card {
+        max-width: 280px;
+    }
+
+    .product-card:nth-child(1):hover {
+    transform: rotate(3deg);
+    }
+
+    .product-card:nth-child(2):hover {
+        transform: rotate(-2deg);
+    }
+
+    .product-card:nth-child(3):hover {
+        transform: rotate(2deg);
+    }
+
+    .product-card {
+        transition: transform 0.3s ease;
     }
 }
 
