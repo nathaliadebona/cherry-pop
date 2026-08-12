@@ -606,6 +606,12 @@ footer {
         margin-right: auto;
     }
 
+    .cart {
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     footer {
         flex-direction: row;
         justify-content: center;
