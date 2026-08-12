@@ -459,6 +459,10 @@ footer {
 }
 
 @media (min-width: 1024px) {
+    body {
+        padding-bottom: 0;
+    }
+
     header {
         display: flex;
         justify-content: space-between;
@@ -531,6 +535,12 @@ footer {
 
     .product-card {
         transition: transform 0.3s ease;
+    }
+
+    .sundae-builder p {
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
