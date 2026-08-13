@@ -368,8 +368,17 @@ nav ul li a.active {
 /* ===== QUIZ PAGE ===== */
 
 .quiz {
+    position: relative;
     padding: var(--space-xl) var(--space-sm);
     text-align: center;
+}
+
+.decorative-cherry--quiz {
+    position: absolute;
+    top: 1.2rem;
+    right: 20.5rem;
+    width: 4rem;
+    transform: rotate(15deg);
 }
 
 .quiz h1,
