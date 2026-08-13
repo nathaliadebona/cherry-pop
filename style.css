@@ -377,7 +377,7 @@ nav ul li a.active {
     color: var(--color-cream);
 }
 
-.quiz-form button[type="submit"] {
+#quiz-form button[type="submit"] {
     display: block;
     max-width: 80%;
     margin: var(--space-lg) auto 0;
