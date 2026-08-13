@@ -253,12 +253,21 @@ nav ul li a.active {
 /* ===== ABOUT PAGE ===== */
 
 .about {
+    position: relative;
     padding: var(--space-xl) var(--space-sm);
     text-align: center;
 }
 
 .about h1 {
     margin-bottom: var(--space-lg);
+}
+
+.decorative-cherry--about {
+    position: absolute;
+    top: 3.5rem;
+    right: 32.5rem;
+    width: 5rem;
+    transform: rotate(-15deg);
 }
 
 .about-story {
@@ -319,6 +328,7 @@ nav ul li a.active {
 }
 
 .team-member {
+    position: relative;
     padding: var(--space-lg) var(--space-md);
     border-radius: 1rem;
 }
@@ -331,12 +341,28 @@ nav ul li a.active {
     background-color: color-mix(in srgb, var(--color-mint) 15%, white);
 }
 
-.team-member img {
+.member-photo {
     background-color: var(--color-cream);
     width: 8rem;
     height: 8rem;
     border-radius: 50%;
     margin-bottom: var(--space-sm);
+}
+
+.decorative-cherry--team-1 {
+    position: absolute;
+    top: -2rem;
+    left: -2rem;
+    width: 5rem;
+    transform: rotate(-20deg);
+}
+
+.decorative-cherry--team-2 {
+    position: absolute;
+    bottom: -2rem;
+    right: -2rem;
+    width: 5rem;
+    transform: rotate(15deg);
 }
 
 /* ===== QUIZ PAGE ===== */
