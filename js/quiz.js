@@ -11,6 +11,8 @@ form.addEventListener('submit', (event) => {
     const answer2 = secondQuestion.value;
     const answer3 = thirdQuestion.value;
 
+    const quizResult = document.getElementById('quiz-result');
+
     let conesScore = 0;
     let cupsScore = 0;
     let shakesScore = 0;
@@ -39,5 +41,11 @@ form.addEventListener('submit', (event) => {
         shakesScore++;
     }
 
-    console.log(conesScore, cupsScore, shakesScore)
+    if (conesScore > cupsScore && conesScore > shakesScore) {
+        quizResult.textContent = "You're a Cones person! 🍦 Easygoing and always on the move.";
+    } else if (cupsScore > conesScore && cupsScore > shakesScore) {
+        quizResult.textContent = "You're a Cups person! 🍨 You like to slow down and savor it.";
+    } else {
+        quizResult.textContent = "You're a Shakes person! 🥤 Bold, fun, and always ready to sip.";
+    }
 })
