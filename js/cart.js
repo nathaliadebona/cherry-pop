@@ -33,31 +33,46 @@ const cart = JSON.parse(localStorage.getItem('cherry-pop-cart')) || [];
 const emptyCartMsg = document.getElementById('empty-cart-message');
 const cartItems = document.getElementById('cart-items');
 
-if (emptyCartMsg) {
-    if (cart.length === 0) {
-        emptyCartMsg.style.display = "block";
-        cartItems.style.display = "none";
-    } else {
-        emptyCartMsg.style.display = "none";
-        cartItems.style.display = "block";
+function renderCart() {
+    if (emptyCartMsg) {
+        if (cart.length === 0) {
+            emptyCartMsg.style.display = "block";
+            cartItems.style.display = "none";
+        } else {
+            emptyCartMsg.style.display = "none";
+            cartItems.style.display = "block";
+            cartItems.innerHTML= "";
 
-        cart.forEach((item) => {
-            const li = document.createElement('li');
+            cart.forEach((item, index) => {
+                const li = document.createElement('li');
+                li.textContent = `${item.name} - $${item.price}`;
 
-            li.textContent = `${item.name} - $${item.price}`;
+                const removeButton = document.createElement('button');
+                removeButton.innerHTML = '<i class="fa-solid fa-trash"></i>';
+                removeButton.addEventListener('click', () => {
+                    cart.splice(index, 1);
+                    localStorage.setItem('cherry-pop-cart', JSON.stringify(cart)); 
 
-            cartItems.appendChild(li);
-        });
-    };
+                    renderCart();
+                    updateCartCount();
+                });
 
-    const total = cart.reduce(function(acc, item) {
-        return acc + item.price;
-    }, 0)
+                li.appendChild(removeButton);
+                cartItems.appendChild(li);
+            });
+        };
 
-    const cartTotal = document.getElementById('cart-total');
+        const total = cart.reduce(function(acc, item) {
+            return acc + item.price;
+        }, 0)
 
-    cartTotal.textContent = `$${total.toFixed(2)}`;
+        const cartTotal = document.getElementById('cart-total');
+
+        cartTotal.textContent = `$${total.toFixed(2)}`;
+    }
 }
+
+renderCart();
 
 
 
