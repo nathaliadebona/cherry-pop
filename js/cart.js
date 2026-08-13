@@ -48,7 +48,16 @@ if (emptyCartMsg) {
 
             cartItems.appendChild(li);
         });
-    }}
+    };
+
+    const total = cart.reduce(function(acc, item) {
+        return acc + item.price;
+    }, 0)
+
+    const cartTotal = document.getElementById('cart-total');
+
+    cartTotal.textContent = `$${total.toFixed(2)}`;
+}
 
 
 
