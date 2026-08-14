@@ -297,6 +297,31 @@ nav ul li a.active {
     cursor: pointer;
 }
 
+#cart-items li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-sm);
+    border-radius: 1rem;
+    background-color: color-mix(in srgb, var(--color-pink) 15%, white);
+    margin-bottom: var(--space-sm);
+    list-style: none;
+}
+
+.remove-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.25rem;
+    height: 2.25rem;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--color-cherry);
+    color: var(--color-cream);
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
 /* ===== ABOUT PAGE ===== */
 
 .about {

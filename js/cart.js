@@ -49,6 +49,7 @@ function renderCart() {
 
                 const removeButton = document.createElement('button');
                 removeButton.innerHTML = '<i class="fa-solid fa-trash"></i>';
+                removeButton.classList.add('remove-btn');
                 removeButton.addEventListener('click', () => {
                     cart.splice(index, 1);
                     localStorage.setItem('cherry-pop-cart', JSON.stringify(cart)); 
