@@ -40,7 +40,7 @@ inputEl.forEach((input) => {
         });
         
         const toppingDisplayText = toppingDisplay.join(", ") || "no toppings";
-        console.log(JSON.stringify(toppingDisplayText));
-        sundaePreview.textContent = `Your Sundae: ${coneDisplay} with ${flavorDisplay} flavor, topped with ${toppingDisplay}`;
+        
+        sundaePreview.innerHTML = `Your Sundae: <span class="highlight">${coneDisplay}</span> with <span class="highlight">${flavorDisplay}</span> flavor, topped with <span class="highlight">${toppingDisplayText}</span>`;
     });
 })
