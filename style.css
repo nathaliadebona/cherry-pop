@@ -447,9 +447,9 @@ nav ul li a.active {
 
 .decorative-cherry--quiz {
     position: absolute;
-    top: 1.2rem;
-    right: 20.5rem;
-    width: 4rem;
+    top: 2rem;
+    right: 1rem;
+    width: 3rem;
     transform: rotate(15deg);
 }
 
@@ -744,6 +744,14 @@ footer {
         bottom: -2rem;
         right: -2rem;
         width: 5rem;
+        transform: rotate(15deg);
+    }
+
+    .decorative-cherry--quiz {
+        position: absolute;
+        top: 1.2rem;
+        right: 20.5rem;
+        width: 4rem;
         transform: rotate(15deg);
     }
 
