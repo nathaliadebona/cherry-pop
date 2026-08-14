@@ -99,7 +99,58 @@
             <h2>Build Your Own Sundae</h2>
             <p>Pick your cone, your flavor, and your topping — watch it come together.</p>
 
-            <div id="sundae-builder-area"></div>
+            <div id="sundae-builder-area">
+                <div class="cone">
+                    <h3>Choose your cone</h3>
+                    <label>
+                        <input type="radio" name="cone" value="waffle-cone">
+                        &#x1F366 Waffe Cone
+                    </label>
+
+                    <label>
+                        <input type="radio" name="cone" value="cup">
+                        &#x1F964 Cup
+                    </label>
+                </div>
+
+                <div class="flavor">
+                    <h3>Choose your flavor</h3>
+                    <label>
+                        <input type="radio" name="flavor" value="vanilla">
+                        &#x1F366 Vanilla
+                    </label>
+
+                    <label>
+                        <input type="radio" name="flavor" value="chocolate">
+                        &#x1F36B Chocolate
+                    </label>
+
+                    <label>
+                        <input type="radio" name="flavor" value="strawberry">
+                        &#x1F353 Strawberry
+                    </label>
+                </div>
+
+                <div class="toppings">
+                    <h3>Choose your toppings</h3>
+                    <label>
+                        <input type="checkbox" name="topping" value="cherry">
+                        &#x1F352 Cherry
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="topping" value="sprinkles">
+                        &#x1F308 Sprinkles
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="topping" value="chocolate-syrup">
+                        &#x1F36B Chocolate Syrup
+                    </label>
+                </div>
+
+                <div id="sundae-preview"></div>
+            </div>
         </section>
     </main>
 
@@ -118,5 +169,6 @@
     </footer>
 
     <script src="js/cart.js"></script>
+    <script src="js/sundae.js"></script>
 </body>
 </html>
