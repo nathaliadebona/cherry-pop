@@ -426,11 +426,23 @@ nav ul li a.active {
 }
 
 #quiz-result {
+    position: relative;
     margin-top: var(--space-xl);
     padding: var(--space-lg);
     border-radius: 1rem;
     background-color: var(--color-yellow);
     text-align: center;
+}
+
+.result-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-sm);
+}
+
+.result-content img {
+    width: 100px;
 }
 
 /* ===== CART PAGE ===== */

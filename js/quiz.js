@@ -42,10 +42,25 @@ form.addEventListener('submit', (event) => {
     }
 
     if (conesScore > cupsScore && conesScore > shakesScore) {
-        quizResult.textContent = "You're a Cones person! 🍦 Easygoing and always on the move.";
+        quizResult.innerHTML = `
+            <div class="result-content">
+                <img src="assets/waffle-cone-classic.webp" alt="Waffle Cone Classic">
+                <p>You're a Cones person! 🍦 Easygoing and always on the move.</p>
+            </div>
+        `;
     } else if (cupsScore > conesScore && cupsScore > shakesScore) {
-        quizResult.textContent = "You're a Cups person! 🍨 You like to slow down and savor it.";
+        quizResult.innerHTML = `
+            <div class="result-content">
+                <img src="assets/double-scoop-cup.webp" alt="Waffle Cone Classic">
+                <p>You're a Cups person! 🍨 You like to slow down and savor it.</p>
+            </div>
+        `;
     } else {
-        quizResult.textContent = "You're a Shakes person! 🥤 Bold, fun, and always ready to sip.";
+        quizResult.innerHTML = `
+            <div class="result-content">
+                <img src="assets/cherry-pop-shake.webp" alt="Waffle Cone Classic">
+                <p>You're a Shakes person! 🥤 Bold, fun, and always ready to sip.</p>
+            </div>
+        `;
     }
 })
